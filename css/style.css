@@ -529,7 +529,7 @@ body.dark-theme .header__menu a {
 
 .dark-theme .apps__market-btn:hover {
     background-color: #e1d4c4;
-    color#: #403f3d;
+    color: #403f3d;
 }
 
 .dark-theme .footer__social-btn {
@@ -540,6 +540,209 @@ body.dark-theme .header__menu a {
 .dark-theme .footer__social-btn:hover {
     background-color: #c1b6ad;
     color: #403f3d;
+}
+
+@media (max-width: 1024) {
+    .hero-title {
+        font-size: 56px;
+    }
+    .slider__main-title,
+    .about__title,
+    .apps__title,
+    .footer__title {
+        font-size: 48px;
+    }
+    .hero__container {
+        padding: 80px 32px;
+    }
+    .about__grid {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__menu,
+    .header__menu-btn {
+        display: none;
+    }
+
+    .header__burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 1px solid #403f3d;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 0;
+        gap: 4px;
+    }
+
+    .header__burger-btn span,
+    .header__burger-btn::before,
+    .header__burger-btn::after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: #403f3d;
+        transition: background-color 0.3s;
+    }
+
+    .dark-theme .header__burger-btn {
+        border-color: #c1b6ad;
+    }
+
+    .dark-theme .header__burger-btn span,
+    .dark-theme .header__burger-btn::before,
+    .dark-theme .header__burger-btn::after {
+        background-color: #c1b6ad;
+    }
+    .hero__container {
+        padding: 60px 24px;
+        border-radius: 24px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+        margin-bottom: 24px;
+
+    }
+
+    .hero__text {
+        font-size: 15px;
+
+    }
+    .slider__wrapper {
+        gap: 16px;
+    }
+
+    .slider__arrow {
+        width: 48px;
+        height: 48px;
+    }
+
+    .slider__main-title,
+    .about__title,
+    .apps__title,
+    .footer__title {
+        font-size: 34px;
+        margin-bottom: 24px;
+
+    }
+
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .apps__container {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .apps__img-wrap {
+        justify-content: center;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        padding: 40px 24px;
+        border-radius: 24px;
+        gap: 32px;
+    }
+
+    .footer__title {
+        font-size: 30px;
+    }
+
+    .footer__social-btn {
+        width: 48px;
+        height: 48px;
+    }
+    
+   
+}
+
+
+@media (max-width: 480px) {
+    .header__container {
+        padding: 16px 16px;
+    }
+
+    .header__logo img {
+        width: 80px;
+        height: auto;
+
+    }
+
+    .hero__container {
+        padding: 40px 16px;
+        border-radius: 16px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+        line-height: 115%;
+        margin-bottom: 16px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+        margin-bottom: 24px;
+
+    }
+
+    .hero__btn {
+        padding: 14px 32px;
+        font-size: 15px;
+    }
+
+    .slider__main-title,
+    .about__title,
+    .apps__title {
+        font-size: 26px;
+    }
+
+    .slider__wrapper {
+        gap: 8px;
+
+    }
+
+    .slider__arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slider__window {
+        max-width: 240px;
+    }
+
+    .apps__buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .apps__market-btn {
+        justify-content: center;
+    }
+
+    .footer_container {
+        padding: 32px 16px;
+        border-radius: 16px;
+
+    }
+
+    .footer__title {
+        font-size: 24px
+    }
+
+    .footer__socials {
+        flex-wrap: wrap;
+    }
 }
 
 
