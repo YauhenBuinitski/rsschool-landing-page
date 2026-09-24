@@ -466,6 +466,10 @@ body.dark-theme .header__menu a {
     transition: background-color 0.3s;
 }
 
+.header__burger-btn {
+    display: none;
+}
+
 .header__theme-btn:hover {
     background-color: #f0f0f0;
 }
