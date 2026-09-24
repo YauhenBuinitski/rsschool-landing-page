@@ -116,7 +116,7 @@ body {
     background-image: url('../assets/hero.png');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repiat;
+    background-repeat: no-repeat;
     border-radius: 40px;
 }
 
@@ -414,7 +414,7 @@ body {
     max-width: 400px;
 }
 
-footer__contacts-title {
+.footer__contacts-title {
     font-size: 24px;
     color: #E1D4C4;
     margin-bottom: 32px;
