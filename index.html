@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe House</title>
+    <link rel ="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="assets/logo.svg" alt="Logo Coffee House">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="index.html#favorite-coffee">Улюблёная кава</a></li>
+                    <li><a href="index.html#about">Пра нас</a> </li>
+                    <li><a href="index.html#mobile-app">Мабільны дадатак</a></li>
+                    <li><a href="index.html#contacts">Звязацца з намі</a></li>
+
+                </ul>
+            </nav>
+            <!-- <button id="theme-toggle" class="header__theme-btn" aria-label="Змена тэмы">🌓</button> -->
+            <a href="catalog.html" class="header__menu-btn">Меню</a>
+
+            <div class="header__controls">
+                <button id="theme-toggle" class="header__theme-btn" aria-label="Змена тэмы" aria-pressed="false">
+                    
+                        <img src="assets/theme-switch.svg" alt="" aria-hidden="true">
+                
+                </button>
+
+                <button class="header__burger-btn" aria-label="Адкрыць меню">
+                    <span></span>
+                </button>
+            </div>
+        
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                    Атрымлівай асалоду ад кожнага кубку кавы ў нашай цудоўнай кавярні   
+                    </h1>
+                    <p class="hero__text">Дзякуючы ўтульнай атмасферы і смачнай каве "Coffee House Resource" з'яўляецца папулярным месцам для аматараў гэтага каралеўскага напою, а таксама для ўсіх тых, хто шукае цеплыню і сяброўства.</p>
+                    <a href="catalog.html" class="hero__btn">Menu</a>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="slider-section" id="favorite-coffee">
+            <div class="slider__container">
+                <h2 class="slider__main-title">Абяры сваю улюблёную каву</h2>
+                <div class="slider__wrapper">
+                    <button class="slider__arrow slider__arrow-left" id="prev-slide" aria-label="Назад">
+                        <img src="assets/arrow-left.svg" alt="Назад">
+                    </button>
+                    <div class="slider__window">
+                        <div class="slider__track">
+                            <div class="slider__item">
+                                <div class="slider__img-wrap">
+                                    <img src="assets/coffee-1.png" alt="S'mores Frappuccino">
+                                </div>
+                                <h3 class="slider__title">S'mores Frappuccino</h3>
+                                <p class="slider__text">Нашая навінка, - элегантны купаж эспрэса з шакаладным водарам разам з трасніковым цукрам і на аснове аўсянага малака і карыцы.</p>
+                                <span class="slider__price">5.50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider__arrow slider__arrow-right" id="next-slide" aria-label="Наперад">
+                    <img src="assets/arrow-right.svg" alt="Наперад">   
+                    </button>
+                </div>
+
+                    <div class="slider__pagination">
+                        <span class="slider__dot active"></span>
+                        <span class="slider__dot"></span>
+                        <span class="slider__dot"></span>
+                    </div>
+
+
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="about__container">
+                <h2 class="about__title">
+                    Кавярня з вялікім сэрцам
+                </h2>
+                <div class="about__grid">
+                    <div class="about__img-wrap">
+                        <img src="assets/box.jpg" alt="Дзяўчына размешвае каву">
+                    </div>
+                    <div class="about__img-wrap about__img-wrap--shifted">
+                        <img src="assets/box-1.jpg" alt="Малады чалавек п'е каву">
+                    </div>
+                    <div class="about__img-wrap about__img-wrap--shifted">
+                        <img src="assets/box-2.jpg" alt="Пара п'е каву">
+                    </div>
+                    <div class="about__img-wrap">
+                    <img src="assets/box-3.jpg" alt="Кубак кавы на стале і ліхтарыкі">
+                    </div>
+                                </div>
+            </div>
+        </section>
+        <section class="apps-section" id="mobile-app">
+            <div class="apps__container">
+                <div class="apps__content">
+                    <h2 class="apps__title">
+                        Пампуй прыкладанне на свой мабільны і атрымоўвай бонусы!
+                    </h2>
+                    <p class="apps__text">
+                        Без чаргі і без клапот! Замаўляй і аплачвай каву загадзя. Забірай не марнуючы часу на чэргі! Даведвайся пра трэнды, навінкі, акцыі і зніжкі! Усё у тваім мабільным! 
+                    </p>
+                    <div class="apps__buttons">
+                    <a href="https://apple.com" target="_blank" class="apps__market-btn">App Store</a>
+                    <a href="https://google.com" target="_blank" class="apps__market-btn">Google Play</a> 
+                    </div>
+
+                </div>
+                <div class="apps__img-wrap">
+                    <img src="assets/mobile.png" alt="Мабільнае прыкладанне">
+                </div>
+
+
+
+            </div>    
+        </section>
+    </main>
+
+<footer class="footer" id="contacts">
+    <div class="footer__container">
+       <div class="footer__content">
+        <h2 class="footer__title">Каштуй і атрымоўвай асалоду! Чакаем!</h2>
+        <div class="footer__socials">
+            <a href="https://twitter.com" target="_blank" class="footer__social-btn">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="footer__social-btn">Instagram</a>
+            <a href="https://facebook.com" target="_blank" class="footer__social-btn">Facebook</a>
+        </div>
+       </div>
+       <div class="footer__contacts">
+        <h3 class="footer__contacts-title">Звязацца з намі</h3>
+        <ul class="footer__list">
+            <li><a href="tel:+12345678910" class="footer__link"> +1 (234) 567-8910</a></li>
+            <li><a href="https://google.com" target="_blank" class="footer__link">Мінск, Пр-т Францішка Скарыны 1</a></li>
+            <li><span class="footer__link-text">Панядзелак-Нядзеля: 09:00 AM - 11:00 PM</span></li>
+
+        </ul>
+
+       </div>
+        
+    </div>
+</footer>    
+
+    
+    
+
+<script src="js/theme.js"></script>
+</body>
+</html>
