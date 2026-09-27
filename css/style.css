@@ -40,19 +40,28 @@ body {
 }
 
 .header__logo img {
-    width: 100px !important;
-    height: auto !important;
+    width: 100px;
+    height: auto;
+   
 }
+
+.header__logo-dark {
+    display: none;
+
+}
+
+.dark-theme .header__logo-light {
+    display: none;
+}
+
+.dark-theme .header__logo-dark {
+    display: block;
+}
+
 
 .header__menu {
     display: flex;
     gap: 40px;
-}
-
-.header__logo img {
-    width: 100px;
-    height: 60px;
-    object-fit: contain;
 }
 
 .header__menu a {
