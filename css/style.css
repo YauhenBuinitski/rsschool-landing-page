@@ -841,8 +841,6 @@ body.dark-theme .header__menu a {
 .catalog-card {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -862,35 +860,43 @@ body.dark-theme .header__menu a {
 
 .catalog-card__img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
     display: block;
+    border-radius: 40px;
 
 }
 
 .catalog-card__info {
-    padding: 20px 0;
+    padding: 16px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
 }
 
 .catalog-card__title {
-    font-size: 24px;
+    font-size: 22px;
     color: #403F3D;
-    margin-bottom: 12px;
+    margin: 0;
+    font-weight: 600;
 
 }
 
 .catalog-card__text {
-    font-size: 16px;
+    font-size: 15px;
     color: #403F3D;
-    line-height: 150%;
-    margin-bottom: 12px;
+    line-height: 140%;
+    margin: 0;
+    flex: 1;
 
 }
 
 .catalog-card__price {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     color: #403F3D;
+    margin-top: auto;
 }
 
 
