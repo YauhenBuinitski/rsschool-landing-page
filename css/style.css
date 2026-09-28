@@ -632,6 +632,21 @@ body.dark-theme .header__menu a {
   filter: brightness(0) saturate(100%);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+.header__burger-btn.active span {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.header__burger-btn.active::before {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+.header__burger-btn.active::after {
+  opacity: 0;
+}
+
 @media (max-width: 1024px) {
   .hero__title {
     font-size: 56px;
