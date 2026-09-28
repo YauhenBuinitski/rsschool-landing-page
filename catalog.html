@@ -1,119 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="be">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffe House - Меню</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <a href="index.html" class="header__logo">
-                <img src="assets/logo.svg" alt="Coffee House" class="header__logo-light">
-                <img src="assets/logo-dark.svg" alt="" aria-hidden="true" class="header__logo-dark">
-            </a>
+      <div class="header__container">
+        <a href="index.html" class="header__logo">
+          <img
+            src="assets/logo.svg"
+            alt="Coffee House"
+            class="header__logo-light"
+          />
+          <img
+            src="assets/logo-dark.svg"
+            alt=""
+            aria-hidden="true"
+            class="header__logo-dark"
+          />
+        </a>
 
-            <nav class="header__nav">
-                <ul class="header__menu">
-                    <li><a href="index.html#favorite-coffee">Улюблёная кава</a></li>
-                    <li><a href="index.html#about">Пра нас</a> </li>
-                    <li><a href="index.html#mobile-app">Мабільны дадатак</a></li>
-                    <li><a href="index.html#contacts">Звязацца з намі</a></li>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li><a href="index.html#favorite-coffee">Улюблёная кава</a></li>
+            <li><a href="index.html#about">Пра нас</a></li>
+            <li><a href="index.html#mobile-app">Мабільны дадатак</a></li>
+            <li><a href="index.html#contacts">Звязацца з намі</a></li>
+          </ul>
+        </nav>
+        <!-- <a href="catalog.html" class="header__menu-btn">Меню</a> -->
 
-                </ul>
-            </nav>
-            <!-- <a href="catalog.html" class="header__menu-btn">Меню</a> -->
+        <div class="header__controls">
+          <button
+            id="theme-toggle"
+            class="header__theme-btn"
+            aria-label="Змена тэмы"
+            aria-pressed="false"
+          >
+            <img src="assets/theme-switch.svg" alt="" aria-hidden="true" />
+          </button>
 
-            <div class="header__controls">
-                <button id="theme-toggle" class="header__theme-btn" aria-label="Змена тэмы" aria-pressed="false"> 
-                    
-                        <img src="assets/theme-switch.svg" alt="" aria-hidden="true">
-                    
-                </button>
-
-                <button class="header__burger-btn" aria-label="Адкрыць меню">
-                    <span></span>
-                </button>
-            </div>
-        
+          <button
+            class="header__burger-btn"
+            aria-label="Адкрыць меню"
+            aria-expanded="false"
+          >
+            <span></span>
+          </button>
         </div>
-
+      </div>
+      <nav class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li>
+            <a href="index.html#favorite-coffee" class="mobile-menu__link"
+              >Улюблёная кава</a
+            >
+          </li>
+          <li>
+            <a href="index.html#about" class="mobile-menu__link"></a>Пра нас
+          </li>
+          <li>
+            <a href="index.html#contacts" class="mobile-menu__link"
+              >Звяўацца з намі</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-    
+
     <main class="catalog-main">
-        <section class="catalog-nav">
-            <div class="catalog-nav__container">
-                <h1 class="catalog-nav__title">Заўсёды з кавай!</h1>
-                <ul class="catalog-nav__list">
-                    <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn active">Кава</button>
-                    </li>
-                    <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn">Гарбата</button>
-                    </li>
-                    <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn">Прысмакі</button>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="catalog-content">
-            <div class="catalog-content__container">
-                <div class="catalog-grid" id="catalog-grid">
-
-                </div>
-                <div class="catalog-content__refresh catalog-refresh">
-                    <button class="catalog-refresh__btn" aria-label="Паказаць яшчэ" id="refresh-btn">
-                        <span class="catalog-refresh_icon">
-                            <img src="assets/refresh.svg" alt="" aria-hidden="true">
-                        </span>
-                    </button>
-                </div>
-
-
-            </div>
+      <section class="catalog-nav">
+        <div class="catalog-nav__container">
+          <h1 class="catalog-nav__title">Заўсёды з кавай!</h1>
+          <ul class="catalog-nav__list">
+            <li class="catalog-nav__item">
+              <button class="catalog-nav__btn active">Кава</button>
+            </li>
+            <li class="catalog-nav__item">
+              <button class="catalog-nav__btn">Гарбата</button>
+            </li>
+            <li class="catalog-nav__item">
+              <button class="catalog-nav__btn">Прысмакі</button>
+            </li>
+          </ul>
         </div>
-         
+      </section>
 
+      <div class="catalog-content">
+        <div class="catalog-content__container">
+          <div class="catalog-grid" id="catalog-grid"></div>
+          <div class="catalog-content__refresh catalog-refresh">
+            <button
+              class="catalog-refresh__btn"
+              aria-label="Паказаць яшчэ"
+              id="refresh-btn"
+            >
+              <span class="catalog-refresh_icon">
+                <img src="assets/refresh.svg" alt="" aria-hidden="true" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer" id="contacts">
-    <div class="footer__container">
-       <div class="footer__content">
-        <h2 class="footer__title">Каштуй і атрымоўвай асалоду! Чакаем!</h2>
-        <div class="footer__socials">
-            <a href="https://twitter.com" target="_blank" class="footer__social-btn" aria-label="Twitter">
-                <img src="assets/buttons/twitter.svg" alt="" aria-hidden="true">
-            </a> 
-            <a href="https://instagram.com" target="_blank" class="footer__social-btn" aria-label="Instagram">
-                <img src="assets/buttons/instagram.svg" alt="" aria-hidden="true">
+      <div class="footer__container">
+        <div class="footer__content">
+          <h2 class="footer__title">Каштуй і атрымоўвай асалоду! Чакаем!</h2>
+          <div class="footer__socials">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="footer__social-btn"
+              aria-label="Twitter"
+            >
+              <img src="assets/buttons/twitter.svg" alt="" aria-hidden="true" />
             </a>
-            <a href="https://facebook.com" target="_blank" class="footer__social-btn" aria-label="Facebook">
-                <img src="assets/buttons/facebook.svg" alt="" aria-hidden="true">
-            </a> 
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="footer__social-btn"
+              aria-label="Instagram"
+            >
+              <img
+                src="assets/buttons/instagram.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="footer__social-btn"
+              aria-label="Facebook"
+            >
+              <img
+                src="assets/buttons/facebook.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </a>
+          </div>
         </div>
-       </div>
-       <div class="footer__contacts">
-        <h3 class="footer__contacts-title">Звязацца з намі</h3>
-        <ul class="footer__list">
-            <li><a href="tel:+12345678910" class="footer__link"> +1 (234) 567-8910</a></li>
-            <li><a href="https://maps.google.com/" target="_blank" class="footer__link">Мінск, Пр-т Францішка Скарыны 1</a></li>
-            <li><span class="footer__link-text">Панядзелак-Нядзеля: 09:00 AM - 11:00 PM</span></li>
-
-        </ul>
-
-       </div>
-        
-    </div>
-</footer>    
-    
-
+        <div class="footer__contacts">
+          <h3 class="footer__contacts-title">Звязацца з намі</h3>
+          <ul class="footer__list">
+            <li>
+              <a href="tel:+12345678910" class="footer__link">
+                +1 (234) 567-8910</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://maps.google.com/"
+                target="_blank"
+                class="footer__link"
+                >Мінск, Пр-т Францішка Скарыны 1</a
+              >
+            </li>
+            <li>
+              <span class="footer__link-text"
+                >Панядзелак-Нядзеля: 09:00 AM - 11:00 PM</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/theme.js"></script>
     <script src="js/catalog.js"></script>
-</body>
+  </body>
 </html>
