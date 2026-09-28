@@ -68,7 +68,7 @@
           </li>
           <li>
             <a href="index.html#contacts" class="mobile-menu__link"
-              >Звяўацца з намі</a
+              >Звязацца з намі</a
             >
           </li>
           <li><a href="catalog.html" class="mobile-menu__link">Меню</a></li>
@@ -114,13 +114,18 @@
             >
               <img src="assets/arrow-left.svg" alt="Назад" />
             </button>
+
             <div class="slider__window">
-              <div class="slider__track">
+              <div class="slider__track" id="slider-track">
                 <div class="slider__item">
                   <div class="slider__img-wrap">
-                    <img src="assets/coffee-1.png" alt="S'mores Frappuccino" />
+                    <img
+                      src="assets/slider/coffee-slider-1.png"
+                      alt="Сморс Фрапучына"
+                    />
                   </div>
-                  <h3 class="slider__title">S'mores Frappuccino</h3>
+
+                  <h3 class="slider__title">Сморс Фрапучына</h3>
                   <p class="slider__text">
                     Нашая навінка, - элегантны купаж эспрэса з шакаладным
                     водарам разам з трасніковым цукрам і на аснове аўсянага
@@ -128,8 +133,39 @@
                   </p>
                   <span class="slider__price">5.50</span>
                 </div>
+
+                <div class="slider__item">
+                  <div class="slider__img-wrap">
+                    <img
+                      src="assets/slider/coffee-slider-2.png"
+                      alt="Карамельны Макіята"
+                    />
+                  </div>
+                  <h3 class="slider__title">Карамельны Макіята</h3>
+                  <p class="slider__text">
+                    Духмяны напой з водарам ванілі ды карамелі. Для тых хто
+                    абірае яскравы смак
+                  </p>
+                  <span class="slider__price">5.00</span>
+                </div>
+
+                <div class="slider__item">
+                  <div class="slider__img-wrap">
+                    <img
+                      src="assets/slider/coffee-slider-3.png"
+                      alt="Айс Кава"
+                    />
+                  </div>
+                  <h3 class="slider__title">Айс Кава</h3>
+                  <p class="slider__text">
+                    Духмяны эспрэса з лёдам, -нішто так не астудзіць спякотнаю
+                    парою
+                  </p>
+                  <span class="slider__price">4.50</span>
+                </div>
               </div>
             </div>
+
             <button
               class="slider__arrow slider__arrow-right"
               id="next-slide"
@@ -269,5 +305,6 @@
 
     <script src="js/theme.js"></script>
     <script src="js/burger.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

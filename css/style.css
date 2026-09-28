@@ -221,7 +221,13 @@ body {
   overflow: hidden;
 }
 
+.slider__track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
 .slider__item {
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
